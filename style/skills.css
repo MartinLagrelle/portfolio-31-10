@@ -1,0 +1,110 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(../images/Space.png);
+    height: 1080px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navBar{
+    
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    list-style: none;
+}
+
+.Logo{
+    height: 10%;
+    width: 10%;
+}
+
+li{
+    font-family: Arial, sans-serif;
+    font-size: 2.0em;
+    color: white;
+}
+
+a:visited{
+    color: white;
+}
+
+a{
+    text-decoration: none;
+}
+
+.tableau{
+    margin-top: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+.html{
+    margin-left: 2%;
+    height: 7%;
+    width: 7%;
+}
+
+.css{
+    margin: 2%;
+    height: 7%;
+    width: 7%;
+}
+
+.js{
+    margin: 2%;
+    height: 7%;
+    width: 7%;
+}
+
+.php{
+    margin: 2%;
+    height: 7%;
+    width: 7%;
+}
+
+.menuBg{
+    height: 75px;
+    width: 75px;
+    display: block;
+}
+
+@media screen and (min-width: 1001px){
+    .menuBg{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 401px){
+    li{
+        display: none;
+    }
+    .Logo{
+        display: none;
+    }
+    header{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}
+
+@media screen and (max-width: 400px){
+    header{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}

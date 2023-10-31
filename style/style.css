@@ -1,0 +1,112 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(../images/space6.jpg);
+    height: 1205px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navBar{
+    
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    list-style: none;
+}
+
+.Logo{
+    height: 10%;
+    width: 10%;
+}
+
+li{
+    font-family: Arial, sans-serif;
+    font-size: 2.0em;
+    color: white;
+}
+
+a:visited{
+    color: white;
+}
+a{
+    text-decoration: none;
+}
+
+.BgHeader{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-top: 5%;
+    margin-right: 10%;
+}
+
+.titre1{
+    font-family: Arial, sans-serif;
+    font-size: 3.0em;
+    color: white;
+}
+
+.titre2{
+    font-family: Arial, sans-serif;
+    font-size: 1.3em;
+    color: white;
+}
+
+p{
+    display: flex;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 2.0em;
+    color: white;
+    margin-top: 15%;
+    margin-left: 8%;
+    margin-right: 8%
+    
+}
+
+.menuBg{
+    height: 75px;
+    width: 75px;
+    display: block;
+}
+
+@media screen and (min-width: 1001px){
+    .menuBg{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 401px){
+    li{
+        display: none;
+    }
+    .Logo{
+        display: none;
+    }
+    header{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}
+
+@media screen and (max-width: 400px){
+    header{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}
